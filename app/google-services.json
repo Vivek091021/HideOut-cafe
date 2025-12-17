@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "422010280562",
+    "firebase_url": "https://hideout-cafe-8c867-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "hideout-cafe-8c867",
+    "storage_bucket": "hideout-cafe-8c867.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422010280562:android:d3bcea1fc64f5b7279c0eb",
+        "android_client_info": {
+          "package_name": "com.example.hideoutcafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpByPGfsalAvKcoAkdzxfwVA3LpBA0P_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

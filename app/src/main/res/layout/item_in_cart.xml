@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/card_white_bg"
+        android:backgroundTint="@color/white"
+
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/cartImage"
+                android:layout_width="75dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_home"></ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Burn To Hell Pizza"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="(Medium, 2 + Slices)"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/customizeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="customize your order" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/incc"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:background="@drawable/card_view"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <!-- Use MaterialButton for the decrement button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/t1"
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@color/transperentBackground"
+                    android:outlineProvider="none"
+                    android:paddingStart="8dp"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/baseline_horizontal_rule_black"
+                    app:iconTint="@color/colorPrimary" />
+
+                <!-- Use TextView for displaying the count -->
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <!-- Use MaterialButton for the increment button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/t3"
+                    android:layout_width="25dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:background="@color/transperentBackground"
+                    android:outlineProvider="none"
+                    android:paddingStart="1dp"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/baseline_add_black"
+                    app:iconGravity="start"
+                    app:iconTint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="per item"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="$7.98"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/gray_bg" />
+    </LinearLayout>
+</LinearLayout>

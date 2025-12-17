@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Hideout Cafe</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="register">Register</string>
+    <string name="txtregister">Don\'t have an account yet?  Register</string>
+    <string name="log_out">Log out</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Cart">Cart</string>
+    <string name="Menu">Menu</string>
+    <string name="Profile">Profile</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+
+
+    <string name="splash_screen_animation">Splash Screen Animation Description</string>
+    <string name="device_id" />
+    <string name="vivek">Vivek</string>
+    <string name="Phone_num">+91 9313973847</string>
+    <string name="map">https://maps.app.goo.gl/Enr2zva7Jayva13AA</string>
+</resources>

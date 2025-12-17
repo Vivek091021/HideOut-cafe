@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout"
+    android:background="@drawable/card_white_bg"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+
+
+        android:layout_width="164dp"
+
+
+        android:layout_height="106dp"
+
+
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_marginEnd="13dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/search_24" />
+
+    <TextView
+        android:id="@+id/bestseller_text"
+
+
+        android:layout_width="wrap_content"
+
+
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignTop="@id/item_image"
+
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#D3C335"
+        android:hapticFeedbackEnabled="false"
+        android:text="Bestseller"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bestseller_text"
+        android:layout_marginStart="16dp"
+        android:text="Veg Spaghetti - Pesto"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ingredient_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@id/item_name_text"
+
+
+        android:layout_marginStart="16dp"
+
+
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Onions, Capsicum, Mushrooms,..."
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/ingredient_text"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:text="249.00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ingredient_text"-->
+<!--        android:layout_alignStart="@+id/item_image"-->
+<!--        android:layout_alignEnd="@+id/item_image"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="-4dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        -->
+<!--        />-->
+
+<!--            <Button-->
+
+
+<!--        android:id="@+id/add_button"-->
+
+
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ingredient_text"-->
+
+
+<!--        android:layout_alignStart="@+id/item_image"-->
+
+
+<!--        android:layout_alignEnd="@+id/item_image"-->
+
+
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="-4dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:text="Add +" />-->
+
+    <RelativeLayout
+        android:id="@+id/add_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingredient_text"
+        android:layout_alignStart="@+id/item_image"
+        android:layout_alignEnd="@+id/item_image"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+    <!-- Use MaterialButton for the main button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        app:cornerRadius="20dp"
+        app:iconGravity="end"
+        app:icon="@drawable/baseline_add_24"
+        android:outlineProvider="paddedBounds"
+        android:outlineAmbientShadowColor="@color/colorPrimary"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:backgroundTint="#F1F1F1"
+        android:textColor="@color/colorPrimary"
+        app:iconTint="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+    />
+
+    <!-- Use a separate layout for the increment buttons -->
+        <LinearLayout
+            android:id="@+id/inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/add"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:background="@drawable/card_view"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone">
+
+            <!-- Use MaterialButton for the decrement button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/t1"
+                android:layout_width="32dp"
+            android:layout_height="40dp"
+                android:outlineProvider="none"
+            android:paddingStart="8dp"
+            app:icon="@drawable/baseline_horizontal_rule_24"
+            android:textColor="@color/white"
+            />
+
+            <!-- Use TextView for displaying the count -->
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+
+            <!-- Use MaterialButton for the increment button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/t3"
+                android:layout_width="32dp"
+            android:layout_height="40dp"
+            app:iconGravity="start"
+            android:paddingStart="8dp"
+                android:outlineProvider="none"
+            app:icon="@drawable/baseline_add_24"
+            android:textColor="@color/white"
+            />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

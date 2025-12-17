@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vector_circle">
+
+    <target
+        android:animation="@animator/rotate_anim"
+        android:name="vector_group" />
+    <vector
+        android:name="vector_circle"
+        android:width="200dp"
+        android:height="200dp"
+        android:viewportWidth="200"
+        android:viewportHeight="200">
+        <group>
+            <path
+                android:name="circle"
+                android:fillColor="#2196F3"
+                android:pathData="M100,10A90,90 0,1,1 10,100A90,90 0,0,1 100,10"
+                android:strokeWidth="0" />
+        </group>
+    </vector>
+
+
+</animated-vector>

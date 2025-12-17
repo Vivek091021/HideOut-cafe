@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- User Profile Header -->
+    <group android:id="@+id/group_user_profile">
+        <item
+            android:id="@+id/nav_user_profile"
+            android:title="User Profile"
+            app:showAsAction="never"
+            android:icon="@drawable/ic_user" />
+    </group>
+
+    <!-- Divider Line -->
+<!--    <item-->
+<!--        android:id="@+id/nav_divider"-->
+<!--        android:title=""-->
+<!--        app:showAsAction="never"-->
+<!--        android:icon="@android:color/transparent"-->
+<!--        android:actionLayout="@layout/drawer_divider" />-->
+
+    <!-- Other Menu Items -->
+<!--    <item-->
+<!--        android:id="@+id/nav_item1"-->
+<!--        android:title="Item 1"-->
+<!--        app:showAsAction="never" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_item2"-->
+<!--        android:title="Item 2"-->
+<!--        app:showAsAction="never" />-->
+
+    <!-- Logout Button -->
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/purple" />
+</menu>
