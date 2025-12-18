@@ -134,7 +134,7 @@ LinearLayout linearLayout;
             public void onClick(View view) {
 
                 Intent intent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.instagram.com/vivek____.001?igsh=eTR1N2lpcXhtMGw1&utm_source=ig_contact_invite"));
+                        Uri.parse("https://www.instagram.com/vivek___ramesh_bhai?igsh=eTR1N2lpcXhtMGw1"));
                 startActivity(intent);
 
             }
